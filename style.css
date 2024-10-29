@@ -17,7 +17,7 @@ body {
     background-color: #3e3028;
     color: white;
     padding: 20px;
-    width: 200px;
+    width: 220px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,9 +36,17 @@ body {
     padding: 10px 20px;
     width: 100%;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
-    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.category-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .category-button:hover {
@@ -52,10 +60,16 @@ body {
     font-size: 0.9em;
 }
 
-/* Стили для основного контента */
+/* Стили для главного контента */
 main {
     flex: 1;
     padding: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 header {
@@ -134,7 +148,7 @@ header p {
     font-size: 0.9em;
 }
 
-/* Анимация для текста отзывов */
+/* Анимация для отзывов */
 .review p {
     opacity: 0;
     transform: translateY(10px);
@@ -145,6 +159,7 @@ header p {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
 
